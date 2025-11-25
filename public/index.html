@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ahmed Kaoud</title>
+            <!-- ملف css الخاص بالثوابت -->
+            <link rel="stylesheet" href="assets/css/all.css/all.css">
+            <!-- ملف تنسيق skills -->
+            <link rel="stylesheet" href="assets/css/lists/list_skills/style.css">
+        <!-- ملف css الرئيسي -->
+        <link rel="stylesheet" href="assets/css/home/home.css">
+        <!-- ملف css الخاص بالسلايدر -->
+        <link rel="stylesheet" href="assets/css/all.css/swiper-bundle.min.css">
+        <!-- رابط مكتبة سلايدر css -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- رابط مكتبة الايقونات -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+        <!-- ملف ايقونة الموقع التي تظهر في نافظة المتصفح -->
+        <link rel="icon" href="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Ahmed Kaoud">
+        <!-- عناصر المشاركة -->
+        <meta property="og:title" content="Ahmed Kaoud">
+        <meta property="og:image" content="">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="436">
+        <meta property="og:image:height" content="228">
+        <meta property="og:description" content="">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+        <div class="container">
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">Ahmed<span>Kaoud</span></a>
+            </div>
+            <!-- حاوية القائمة والوصع -->
+            <div class="list-darkmode-menu">
+                <!-- القائمة -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="list_experiences.html">Services</a></li>
+                    <li><a href="list_skills.html">skills</a></li>
+                    <li><a href="list_work.html">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- زر الوضع -->
+                <label class="mode">
+                    <input type="checkbox" checked="checked" id="darkModeButton"/>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </label>
+                <!-- زر القائمة -->
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </div>
+        </nav>
+        </div>
+        </header>
+        <!-- الواجهة الرئيسية للموقع -->
+        <section id="home" class="home">
+        <div class="container">
+        <div class="home-info">
+            <div class="left">
+                <h3>hello, I'm</h3>
+                <h1>Ahmed Kaoud</h1>
+                <h4>And I'm a <span id="multiple"></span></h4>
+                <p>Specialized in web development, graphic design, and digital marketing; creator of content, pioneer in business, and Chief Executive Officer of Duroobx Educational Academy.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/share/15nQ9gTgBS/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/a7medka3oud?igsh=MWt4ZjdmczA4czh6ag=="><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://x.com/a7medka3oud?t=_A5jmuHr7HmIzL0HLKx5Rg&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="btn">
+                <button>Download CV</button>
+            </div>         
+            </div>
+            <div class="right">
+                <div class="profile">
+                    <img src="assets/images/my pictures/man.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <!-- about me -->
+        <section id="about" class="about">
+        <div class="container">
+        <d class="about-wrapper">
+            <div class="about-left">
+                <div class="about-img">
+                    <img src="assets/images/my pictures/man.jpg" alt="">
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="about-info">
+                    <h2>About <span>Me</span></h2>
+                    <h3>Front-end Developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem hic doloribus incidunt nostrum aliquid illum distinctio pariatur deserunt aspernatur at.</p>
+                    <!-- <button class="button"><a href="about.html"></a>Read More</button> -->
+                    <a href="about.html" target="_blank" id="btn">
+                        <button>Read More</button>
+                    </a>
+                    
+                </div>
+            </div>
+        </d>
+        </div>
+        </section>
+        <!--my skills-->
+        <section class="skills">
+        <h2>my <span>skills</span></h2>
+        <div class="skills-content swiper swiper-container"> <!--هنا-->
+        <div class="skills-wrapper swiper-wrapper">
+            <div class="skills-box swiper-slide">
+                <div class="front">
+                    <i class="fa-brands fa-html5"></i>
+                    <div class="center-years">
+                        <span class="num" data-val="2">000</span>
+                        <span class="years">years</span>
+                    </div>
+                    <span class="text">HTML</span>
+                </div>
+                <div class="back">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, deleniti voluptate, unde ab modi dolorem consequuntur est aliquid corrupti esse vitae illo incidunt, temporibus rerum! Sapiente minus ducimus vero officia enim id pariatur dolor nesciunt architecto, quisquam facilis vitae deserunt</p>
+                </div>
+            </div>
+            <div class="skills-box swiper-slide">
+                <div class="front">
+                    <i class="fa-brands fa-css3"></i>
+                    <div class="center-years">
+                        <span class="num" data-val="3">000</span>
+                        <span class="years">years</span>
+                    </div>
+                    <span class="text">CSS</span>
+                </div>
+                <div class="back">
+                    <i class="fa-brands fa-css3"></i>
+                    <h3>CSS</h3>
+                    <p>مهارة في التواصل الفعال مع الفريق.</p>
+                </div>
+            </div>
+            <div class="skills-box swiper-slide">
+                <div class="front">
+                    <i class="fa-brands fa-js"></i>
+                    <div class="center-years">
+                        <span class="num" data-val="3">000</span>
+                        <span class="years">years</span>
+                    </div>
+                    <span class="text">JavaScript</span>
+                </div>
+                <div class="back">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>مهارة في التواصل الفعال مع الفريق.</p>
+                </div>
+            </div>
+            <div class="skills-box swiper-slide">
+                <div class="front">
+                    <i class="fa-solid fa-comments"></i>
+                    <div class="center-years">
+                        <span class="num" data-val="3">000</span>
+                        <span class="years">years</span>
+                    </div>
+                    <span class="text">communication</span>
+                </div>
+                <div class="back">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3>Communication</h3>
+                    <p>مهارة في التواصل الفعال مع الفريق.</p>
+                </div>
+            </div>
+            <div class="skills-box swiper-slide">
+                <div class="front">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="center-years">
+                        <span class="num" data-val="3">000</span>
+                        <span class="years">years</span>
+                    </div>
+                    <span class="text">research skill</span>
+                </div>
+                <div class="back">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>research skill</h3>
+                    <p>مهارة في التواصل الفعال مع الفريق.</p>
+                </div>
+            </div>
+            <div class="skills-box swiper-slide">
+                <div class="front">
+                    <i class="fa-brands fa-react"></i>
+                    <div class="center-years">
+                        <span class="num" data-val="3">000</span>
+                        <span class="years">years</span>
+                    </div>
+                    <span class="text">React</span>
+                </div>
+                <div class="back">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                    <p>مهارة في التواصل الفعال مع الفريق.</p>
+                </div>
+            </div>
+            <div class="skills-box swiper-slide">
+                <div class="front">
+                    <i class="fas fa-utensils"></i>
+                    <div class="center-years">
+                        <span class="num" data-val="3">000</span>
+                        <span class="years">years</span>
+                    </div>
+                    <span class="text">Meals Deliverd</span>
+                </div>
+                <div class="back">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Meals Deliverd</h3>
+                    <p>مهارة في التواصل الفعال مع الفريق.</p>
+                </div>
+            </div>
+            <div class="skills-box swiper-slide">
+                <div class="front">
+                    <i class="fa-solid fa-comments"></i>
+                    <div class="center-years">
+                        <span class="num" data-val="3">000</span>
+                        <span class="years">years</span>
+                    </div>
+                    <span class="text">communication</span>
+                </div>
+                <div class="back">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3>Communication</h3>
+                    <p>مهارة في التواصل الفعال مع الفريق.</p>
+                </div>
+            </div>
+            <div class="skills-box  swiper-slide">
+                <div class="front">
+                    <i class="fa-solid fa-comments"></i>
+                    <div class="center-years">
+                        <span class="num" data-val="3">000</span>
+                        <span class="years">years</span>
+                    </div>
+                    <span class="text">communication</span>
+                </div>
+                <div class="back">
+                    <i class="fa-solid fa-comments"></i>
+                    <h3>Communication</h3>
+                    <p>مهارة في التواصل الفعال مع الفريق.</p>
+                </div>
+            </div>
+
+            <!-- باقي الشرائح هنا -->
+        </div>
+            <!-- أزرار التنقل -->
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <!-- نقاط التصفح -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- <button>view all</button> -->
+        <a href="list_skills.html" target="_blank" id="btn">
+            <button>Read More</button>
+        </a>
+        </section>
+        <!-- my services -->
+        <section id="services" class="services">
+        <h2>Our <span>services</span></h2>
+        <div class="card_container swiper">
+        <div class="services-wrapper swiper-container">    <!--هنا-->
+            <div class="services-box swiper-wrapper">
+            <div class="box swiper-slide">
+                <div class="icon">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti nihil ratione quidem incidunt iste eligendi odio, fugit laborum dolorum eaque.</p>
+                <div class="services-btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="box swiper-slide">
+                <div class="icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti nihil ratione quidem incidunt iste eligendi odio, fugit laborum dolorum eaque.</p>
+                <div class="services-btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="box swiper-slide">
+                <div class="icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti nihil ratione quidem incidunt iste eligendi odio, fugit laborum dolorum eaque.</p>
+                <div class="services-btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="box swiper-slide">
+                <div class="icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti nihil ratione quidem incidunt iste eligendi odio, fugit laborum dolorum eaque.</p>
+                <div class="services-btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="box swiper-slide">
+                <div class="icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti nihil ratione quidem incidunt iste eligendi odio, fugit laborum dolorum eaque.</p>
+                <div class="services-btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="box swiper-slide">
+                <div class="icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti nihil ratione quidem incidunt iste eligendi odio, fugit laborum dolorum eaque.</p>
+                <div class="services-btn">
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="box swiper-slide">
+            <div class="icon">
+                <i class="fa-solid fa-chart-column"></i>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti nihil ratione quidem incidunt iste eligendi odio, fugit laborum dolorum eaque.</p>
+            <div class="services-btn">
+                <button>Read More</button>
+            </div>
+            </div>
+            
+            </div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <a href="list_experiences.html" target="_blank" id="btn">
+            <button>Read More</button>
+        </a>
+        </div>
+        </section>
+        <!-- tools -->
+        <section class="Tools">
+        <h2><span>Programs</span> And <span>Tools</span></h2>
+        <!-- السلايدر -->
+        <div class="swiper portfolio-wrapper swiper-container">
+        <!-- العناصر البرامج والادوات -->
+        <div class="swiper-wrapper">
+            <!-- الشريحة الأولى -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="85">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/Photoshop.jpeg" alt="Photoshop">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+
+            <!-- الشريحة الثانية -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="82">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/illustrator.jpeg" alt="illustrator">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+
+            <!-- الشريحة الثالثة -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="75">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/Figma.jpeg" alt="Figma">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+            <!-- الشريحة الرابعة -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="60">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/Git Hub.jpeg" alt="Git Hub">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+            <!-- الشريحة الخامسة -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="90">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/Premiere.jpeg" alt="Notion">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+            <!-- الشريحة السالسة -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="50">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/ChatGPT.jpeg" alt="Canva">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+            <!-- الشريحة السابعة -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="80">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/Git.jpeg" alt="ChatGPT">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+            <!-- الشريحة الثامنة -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="60">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/Canva.jpeg" alt="Git">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+            <!-- الشريحة التاسعة -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="60">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/Notion.jpeg" alt="Premiere">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+            <!-- الشريحة العاشرة -->
+            <div class="swiper-slide">
+                <div class="progress-circle" data-percentage="30">
+                    <div class="image-container">
+                        <img src="../assets/images/programs and tools/Semrush.jpeg" alt="Semrush">
+                    </div>
+                    <span class="percentage-text">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        </div>
+        <a href="list_tools.html" target="_blank" id="btn">
+        <button>Read More</button>
+        </a>
+        </section>
+        <!-- my portfolio -->
+        <section id="portfolio" class="portfolio">
+        <h2>latest <span>project</span></h2>
+        <div class="container_portfolio swiper">
+        <div class="portfolio-wrapper swiper-container"> <!-- card__content -->
+            <div class="portfolio-boxes swiper-wrapper">
+                <div class="portfolio-box swiper-slide"> <!--.card__article-->
+                    <img src="../assets/images/my_portfolio/Steve Jobs.jpeg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet quisquam explicabo praesentium corrupti esse quaerat maiores nulla sunt facilis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box swiper-slide">
+                    <img src="../assets/images/my_portfolio/mark.jpeg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet quisquam explicabo praesentium corrupti esse quaerat maiores nulla sunt facilis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box swiper-slide">
+                    <img src="../assets/images/my_portfolio/women.jpeg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet quisquam explicabo praesentium corrupti esse quaerat maiores nulla sunt facilis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box swiper-slide">
+                    <img src="../assets/images/my_portfolio/انفوجرافيك كيف تبني صورتك الذاتية؟.jpeg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet quisquam explicabo praesentium corrupti esse quaerat maiores nulla sunt facilis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box swiper-slide">
+                    <img src="../assets/images/my_portfolio/اقتباس.jpeg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet quisquam explicabo praesentium corrupti esse quaerat maiores nulla sunt facilis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box swiper-slide">
+                    <img src="../assets/images/my_portfolio/Post design social media.jpeg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet quisquam explicabo praesentium corrupti esse quaerat maiores nulla sunt facilis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box swiper-slide">
+                    <img src="../assets/images/my_portfolio/post.jpeg" alt="">
+                    <div class="portfolio-info">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet quisquam explicabo praesentium corrupti esse quaerat maiores nulla sunt facilis.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>    
+            </div>
+                <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        </div>
+            <!-- <div class="button">
+            <input type="button" value="View All">
+            </div> -->
+
+            <a href="list_work.html" target="_blank" id="btn">
+                <button>Read More</button>
+            </a>
+
+        <!-- </div> -->
+
+        </section>
+        <!-- clients -->
+        <section class="logo-container">
+        <div class="logo-ticker ticker-1">
+        <div class="logos">
+            <img src="../assets/images/clients/apple.jpg" alt="Client 1">
+            <img src="../assets/images/clients/cocacola.png" alt="Client 2">
+            <img src="../assets/images/clients/Coursera.png" alt="Client 3">
+            <img src="../assets/images/clients/Edrak.png" alt="Client 4">
+            <img src="../assets/images/clients/Google.png" alt="Client 5">
+
+
+            <img src="../assets/images/clients/apple.jpg" alt="Client 1">
+            <img src="../assets/images/clients/cocacola.png" alt="Client 2">
+            <img src="../assets/images/clients/Coursera.png" alt="Client 3">
+            <img src="../assets/images/clients/Edrak.png" alt="Client 4">
+            <img src="../assets/images/clients/Google.png" alt="Client 5">
+        </div>
+        </div>
+
+        <div class="logo-ticker ticker-2">
+        <div class="logos">
+            <img src="../assets/images/clients/HsoubAcademy.png" alt="Client 6">
+            <img src="../assets/images/clients/infinity.png" alt="Client 7">
+            <img src="../assets/images/clients/never.png" alt="Client 8">
+            <img src="../assets/images/clients/stanford.png" alt="Client 9">
+            <img src="../assets/images/clients/Udemy.png" alt="Client 10">
+
+
+            <img src="../assets/images/clients/HsoubAcademy.png" alt="Client 6">
+            <img src="../assets/images/clients/infinity.png" alt="Client 7">
+            <img src="../assets/images/clients/never.png" alt="Client 8">
+            <img src="../assets/images/clients/stanford.png" alt="Client 9">
+            <img src="../assets/images/clients/Udemy.png" alt="Client 10">
+        </div>
+        </div>
+        </section>
+        <!-- customer reviews -->
+        <section id="contact" class="contact">
+        <div class="container">
+        <h2>Contact <span>Me!</span></h2>
+        <!-- فورم ارسال الرسائل -->
+       <form id="contactForm" method="POST" action="/send-email">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required name="name">
+                <input type="email" placeholder="Email Address" required name="email">
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Mobile Number" name="phone">
+                <input type="text" placeholder="Email Subject" name="subject">
+            </div>
+            <textarea name="message" id="" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        </div>
+        </section>
+        <!-- scroll -->
+        <div id="progress">
+        <span id="progress-value">
+        <i class="fa-solid fa-arrow-up"></i>
+        </span>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+        <div class="container">
+        <div class="footer-wrapper">
+            <h2 class="footer-title"><span>follow</span> me on</h2>
+            <!-- إضافة قسم أيقونات التواصل الاجتماعي -->
+            <div class="social-icons">
+                <a href="#" class="social-icon github" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon behance" target="_blank"><i class="fab fa-behance"></i></a>
+                <a href="#" class="social-icon tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-icon youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/a7medka3oud?igsh=MWt4ZjdmczA4czh6ag==" class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/15nQ9gTgBS/" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/a7medka3oud?t=_A5jmuHr7HmIzL0HLKx5Rg&s=09" class="social-icon twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-icon telegram" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#" class="social-icon gmail" target="_blank"><i class="fab fa-google"></i></a>
+            </div>
+            <div class="footer-info">
+                <p>Copyright &copy; 2025 by How To Dev | <span>Ahmed Kaoud</span>.</p>
+            </div>
+            <div class="iconTop">
+                <a href="#home">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+        </footer>
+        <!-- ملف جافا سكريبت الاساسي -->
+        <script src="assets/js/all.js/all.js"></script>
+        <script src="assets/js/home.js"></script>
+        <!-- ملف جافا سكريبت مكتبة سلايدر -->
+        <script src="assets/js/all.js/swiper-bundle.min.js"></script>
+        <!-- رابط مكتبة السلايدر رابط خارجي -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </body>
+</html>

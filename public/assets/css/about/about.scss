@@ -1,0 +1,289 @@
+
+  // about page
+.about {
+    .about-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 7em;
+        position: relative;
+        padding-top: 12rem;
+        .about-left {
+            flex: 1;
+            .about-img {
+                img {
+                    opacity: 0;
+                    width: 400px;
+                    height: 400px;
+                    object-fit: cover;
+                    object-position: top;
+                    border-radius: 50%;
+                    border: 3px solid var(--color);
+                    box-shadow: 0 0 40px var(--color);
+                    cursor: pointer;
+                    transform: translateY(200px) scale(0.8);
+                    transition: transform 1.2s ease-out, opacity  1.2s ease-out;
+                    position: relative;
+                    &.visible {
+                        opacity: 1;
+                        transform: translateY(0) scale(1);
+                    }
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: 0 0 80px var(--color);
+                    }
+                }
+            }
+        }
+        .about-right {
+            flex: 2;
+            margin-bottom: 2.5em;
+            .about-info {
+                h2 {
+                    font-size: 2.8em;
+                    font-weight: bold;
+                    letter-spacing: 0.5px;
+                    color: var(--first);
+                    margin-bottom: 10px;
+                    text-align: left;
+                    opacity: 0;
+                    transform: translateX(-250px);
+                    transition: transform 1s ease-out, opacity 1s ease-out;
+                    &.visible {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                    span {
+                        color: var(--color);
+                    }
+                }
+                h3 {
+                    font-size: 1.8em;
+                    color: var(--first);
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    text-align: left;
+                    opacity: 0;
+                    transform: translateY(-50px);
+                    transition: transform 0.8s ease-out 1s, opacity 1.2s ease-out 1s;
+                    &.visible {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: var(--first);
+                    line-height: 1.4em;
+                    margin-bottom: 15px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.about-me{
+    ul{
+        li{
+            color: var(--first);
+            font-size: 18px;
+        }
+        strong{
+            color: var(--color);
+    
+        }
+    }
+}
+
+.border-left {
+    width: 0;
+    height: 3px;
+    background: var(--color);
+    margin-bottom: 10px;
+    transform: translateX(-50px);
+    transition: width 1s ease-in-out 1s, transform 1s ease-in-out 1s;
+    &.visible {
+        width: 150px;
+        transform: translateX(0px);
+    }
+}
+
+.typing-text {
+    opacity: 0; // النص مرئي دائمًا
+    font-size: 16px;
+    color: var(--first);
+    text-align: left;
+    white-space: normal; // السماح بالتفاف النص
+    overflow: hidden;
+    border-left: 2px solid var(--color); // خط على اليسار
+    line-height: 1.6em; // تحسين التباعد بين السطور
+
+    &.visible {
+       opacity: 1;
+    }
+}
+
+// معرض الصور الشهادات
+.certificate-gallery{ 
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+
+}
+// النص السفلي
+#p{
+font-size: 22px;
+text-align: center;
+color: var(--first);
+}
+
+// الازرار السفلية
+.cv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+p{
+    font-size: 18px;
+    color: var(--first);
+    padding-left: 7px;
+
+}
+
+// تحيرك العناوين
+@keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+.fade-slide-up {
+opacity: 0;
+transform: translateY(100px);
+transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+// حركة البوردر
+.border-animation {
+    position: relative;
+    border-left: 5px solid transparent; /* البوردر غير ظاهر في البداية */
+    overflow: hidden;
+
+}
+
+/* حركة البوردر تُضاف فقط عند دخول العنصر للشاشة */
+@keyframes borderAppear {
+    0% {
+        transform: translateY(100%) translateX(50%);
+        border-color: transparent;
+    }
+    50% {
+        transform: translateY(0) translateX(50%);
+        border-color: var(--first); /* لون البوردر أثناء الظهور */
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+        border-color: var(--color); /* لون البوردر النهائي */
+    }
+}
+
+/* لا يتم تفعيل الأنيميشن إلا عند إضافة هذا الكلاس من JavaScript */
+.border-animation.animate-border {
+    animation: borderAppear 2s ease-in-out forwards;
+}
+
+.border-animation p {
+    opacity: 0; /* النص مخفي في البداية */
+    transform: translateX(-500%); /* يبدأ من اليسار */
+    transition: opacity 0.5s ease, transform 1.5s ease;
+}
+
+
+// التجاوب Responsive
+@media (max-width: 1200px) {
+    .about-wrapper {
+        gap: 5em; // تقليل المسافة بين العناصر
+    }
+}
+
+@media (max-width: 992px) {
+    .about{
+        padding-top: 0;
+         .about-wrapper {
+        flex-direction: column; // تغيير الاتجاه إلى عمودي على الشاشات الصغيرة
+        text-align: center;
+        gap: 0px;
+
+    }
+    }
+   
+
+    .about-info {
+        h2, h3, p {
+            text-align: center; // توسيط النص
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .about-img img {
+        width: 300px; // تصغير الصورة على الشاشات الصغيرة
+        height: 300px;
+    }
+
+    .about-info h2 {
+        font-size: 2.2em; // تصغير حجم الخط للعناوين
+    }
+
+    .about-info h3 {
+        font-size: 1.5em; // تصغير حجم الخط للعناوين الفرعية
+    }
+}
+
+@media (max-width: 576px) {
+    .about-img img {
+        width: 250px; // تصغير الصورة أكثر على الهواتف
+        height: 250px;
+    }
+
+    .about-info h2 {
+        font-size: 1.8em; // تصغير حجم الخط للعناوين
+    }
+
+    .about-info h3 {
+        font-size: 1.2em; // تصغير حجم الخط للعناوين الفرعية
+    }
+
+    .typing-text {
+        font-size: 14px; // تصغير حجم الخط للنص
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+.services {
+  padding: 2rem 9%;
+}
+.services .services-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+.services .services-box .box {
+  transition: all 0.3s ease-in-out;
+  background: var(--box-bg);
+  text-align: center;
+  width: 375px;
+  padding: 35px;
+  border-radius: 15px;
+  border: 2px solid var(--box-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8em;
+  transition: 0.4s ease;
+}
+.services .services-box .box:hover {
+  scale: 1.03;
+  border: 2px solid var(--color);
+  box-shadow: 0 0 0.7rem var(--color);
+}
+.services .services-box .box .icon {
+  font-size: 3em;
+  color: var(--color);
+}
+.services .services-box .box h3 {
+  font-size: 1.8em;
+  color: var(--first);
+}
+.services .services-box .box p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--first);
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+}
+.services .services-box .box .services-btn {
+  width: 300px;
+  margin-top: 10px;
+}
+.services .services-box .box .services-btn button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 25px;
+  color: var(--color);
+  background: transparent;
+  border: 2px solid var(--color);
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.services .services-box .box .services-btn button:hover {
+  color: #fff;
+  background: var(--color);
+  transform: translateY(-7px);
+  box-shadow: 0 0 0.7rem var(--color);
+}
+
+.services-box .box {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}/*# sourceMappingURL=experiences.css.map */

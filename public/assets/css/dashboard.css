@@ -1,0 +1,29 @@
+.card-form {
+        width: 450px;
+        background: #2b2b2b;
+        padding: 25px;
+        border-radius: 12px;
+        margin: auto;
+    }
+    .card-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        background: #ff4c00;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+    }

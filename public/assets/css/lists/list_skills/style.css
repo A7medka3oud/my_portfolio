@@ -1,0 +1,98 @@
+.skills .skills-content {
+  min-height: auto;
+}
+.skills .skills-content .skills-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  min-height: auto;
+  margin-bottom: 2em;
+}
+.skills .skills-content .skills-wrapper .skills-box {
+  width: 375px;
+  height: 400px;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+}
+.skills .skills-content .skills-wrapper .skills-box .front, .skills .skills-content .skills-wrapper .skills-box .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0 2em 0;
+  border-radius: 0.5em;
+  background-color: var(--box-bg);
+  border-bottom: 10px solid var(--color);
+}
+.skills .skills-content .skills-wrapper .skills-box .back {
+  justify-self: start;
+}
+.skills .skills-content .skills-wrapper .skills-box .front i {
+  color: var(--color);
+  font-size: 4em;
+  text-align: center;
+}
+.skills .skills-content .skills-wrapper .skills-box .front .center-years {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0;
+}
+.skills .skills-content .skills-wrapper .skills-box .front .center-years .num {
+  position: relative;
+  color: var(--text-color);
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 4em;
+}
+.skills .skills-content .skills-wrapper .skills-box .front .center-years .years {
+  position: relative;
+  text-align: center;
+  color: var(--color);
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1;
+}
+.skills .skills-content .skills-wrapper .skills-box .front .text {
+  color: var(--text-color);
+  font-size: 2em;
+  text-align: center;
+  padding: 0.7em 0;
+  font-weight: 500;
+  line-height: 0;
+}
+.skills .skills-content .skills-wrapper .skills-box .back {
+  transform: rotateY(180deg);
+  background-color: var(--color);
+  color: var(--text-color);
+}
+.skills .skills-content .skills-wrapper .skills-box .back i {
+  color: var(--text-color);
+  font-size: 4em;
+}
+.skills .skills-content .skills-wrapper .skills-box .back h3 {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+.skills .skills-content .skills-wrapper .skills-box .back p {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0 1em;
+}
+.skills .skills-content .skills-wrapper .skills-box:hover .front {
+  transform: rotateY(180deg);
+}
+.skills .skills-content .skills-wrapper .skills-box:hover .back {
+  transform: rotateY(360deg);
+}/*# sourceMappingURL=style.css.map */

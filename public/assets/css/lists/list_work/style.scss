@@ -1,0 +1,167 @@
+
+.portfolio{
+  .container_portfolio{
+    padding: 2em;
+  }
+  .portfolio-boxes{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2.5em;
+      .portfolio-box{
+          position: relative;
+          width: 375px;
+          height: 500px;
+          overflow: hidden;
+          border-radius: 15px;
+          box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+          cursor: pointer;
+          img{
+              width: 100%;
+              border-radius: 15px;
+              transition: 0.5s ease;
+
+          }
+          &:hover img{
+              transform: scale(1.1);
+          }
+          .portfolio-info{
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              padding: 0 1.5em;
+              background: linear-gradient(rgba(0, 0, 0, 0.4), var(--color));
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              text-align: center;
+              transform: translateY(100%);
+              transition: 0.5s ease;
+              h4{
+                  font-size: 2em;
+                  color: #fff;
+                  margin-bottom: 5px;
+              }
+              p{
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 1.4em;
+                  margin: 10px 15px 15px;
+                  color: #fff;
+
+              }
+              a{
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 3em;
+                  height: 3em;
+                  background: #fff;
+                  border-radius: 50%;
+                  i{
+                      font-size: 1em;
+                      color: #000;
+                  }
+              }
+          }
+          &:hover .portfolio-info{
+              transform: translateY(0);
+          }
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+// ازرار التنقل
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--first);
+        background-color: var(--box-bg);
+        border: 2px solid var(--color);
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.4s ease;
+
+        &:hover {
+            background-color: var(--color);
+            color: var(--text-color);
+            transform: translateY(-3px);
+            box-shadow: 0 0 0.7rem var(--color);
+        }
+    }
+
+    .page-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: var(--box-bg);
+        border: 2px solid var(--color);
+        color: var(--first);
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.4s ease;
+
+        &:hover {
+            background-color: var(--color);
+            color: var(--text-color);
+        }
+
+        &.active {
+            background-color: var(--color);
+            color: var(--text-color);
+            border-color: var(--color);
+        }
+    }
+}
+
+// scroll
+#progress{
+    // background-color: var(--color);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    #progress-value{
+        display: block;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 35px;
+        color: var(--second);
+    
+    }
+}
