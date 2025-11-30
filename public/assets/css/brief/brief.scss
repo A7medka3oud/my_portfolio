@@ -1,0 +1,109 @@
+
+.container {
+    max-width: 850px;
+    margin: 50px auto;   // يبعد من فوق وتحت كمان
+    padding: 50px;       // يوسع المحتوى داخليًا
+}
+
+
+h2 {
+        font-weight: 600;
+        margin-bottom: 25px;
+        font-size: 23px;
+        text-align: center;
+        color: var(--first);
+    }
+
+    form {
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 6px;
+            font-size: 16px;
+            color: var(--first);
+
+            span {
+                color: var(--color);
+                font-weight: 500;
+            }
+        }
+
+        input, textarea {
+            width: 100%;
+            background-color: var(--clr-bg);
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            color: var(--first);
+            transition: .2s;
+
+            // &:hover {
+            //     background-color: #cbd6ff;
+            // }
+
+            &::placeholder {
+                color: #777;
+            }
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .so{
+            margin-bottom: 12px;
+            .so3{
+                margin-bottom: 0px;
+            }
+        }
+
+        // زر الإرسال بنظام أزرار الموقع
+        button {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 14px 30px;
+            margin-top: 25px;
+            border-radius: 30px;
+            color: #fff;
+            background: var(--color);
+            border: 2px solid var(--color);
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            text-align: center;
+
+            &:hover {
+                color: var(--color);
+                background: transparent;
+                transform: translateY(-5px);
+                box-shadow: 0 0 0.7rem var(--color);
+            }
+        }
+    }
+
+// ========== Responsive Design ==========
+@media (max-width: 768px) {
+    body {
+        padding: 40px 20px;
+    }
+
+    .container {
+        padding: 30px;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+}
